@@ -67,12 +67,18 @@ public class Main08 {
                         System.out.print("Harga : ");
                         int harga = sc.nextInt();
 
+                        System.out.print("Jumlah : ");
+                        int jumlah = sc.nextInt();  //update quiz 2
+                        sc.nextLine();
+                        
                         // Membuat objek pesanan dan menambahkannya ke dalam daftar pesanan
                         Pesanan08 ps = new Pesanan08(
-                                kode,
-                                namaPesanan,
-                                harga,
-                                p.namaPembeli);
+                            kode,
+                            namaPesanan,
+                            harga,
+                            p.namaPembeli,
+
+                            jumlah); // update quiz 2
 
                         pesanan.tambahPesanan(ps);
 
